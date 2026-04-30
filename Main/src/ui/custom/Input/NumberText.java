@@ -10,6 +10,7 @@ import javax.swing.event.DocumentListener;
 import java.awt.*;
 
 import static java.awt.Font.PLAIN;
+
 import static service.EventEnum.CLEAR_SPACE;
 
 public class NumberText extends JTextField implements EventListener {
@@ -58,7 +59,7 @@ public class NumberText extends JTextField implements EventListener {
     //design pattern
     @Override
     public void update(EventEnum eventType) {
-        if (eventType.equals (CLEAR_SPACE)&& (this.isEnabled())){
+        if (eventType.equals (CLEAR_SPACE) && (this.isEnabled())){
             this.setText("");
         }
     }
